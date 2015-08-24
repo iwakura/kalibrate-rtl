@@ -48,7 +48,7 @@
 #include <unistd.h>
 #include <sys/time.h>
 #endif
-#ifdef D_HOST_OSX
+#if defined(__FreeBSD__) || defined(D_HOST_OSX)
 #include <libgen.h>
 #endif /* D_HOST_OSX */
 #include <string.h>
